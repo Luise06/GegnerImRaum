@@ -14,7 +14,7 @@ public class Shotable : MonoBehaviour
 
     private void Start()
     {
-        scoreManagment = GameObject.Find("ScoreManager").GetComponent<ScoreManagment>();
+        //scoreManagment = GameObject.Find("ScoreManager").GetComponent<ScoreManagment>();
         //shootableBoxScript = GameObject.Find("ShootCube").GetComponent<ShootableBox>();
         spawnPoints1 = GameObject.Find("Spawn0");
         enemySpawnScript = GameObject.Find("SpawnEnemies").GetComponent<SpawnEnemy>();
