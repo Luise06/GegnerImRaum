@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/mcs.rsp.meta
 guid: 5b96cb77698445b47821b0307f6a63bd
+========
+guid: fa47eebcbdf49e34fbb7b7c9eb53460d
+folderAsset: yes
+>>>>>>>> Stashed changes:Assets/Fog.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

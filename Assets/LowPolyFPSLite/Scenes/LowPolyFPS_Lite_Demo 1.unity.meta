@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/LowPolyFPSLite/Scenes/LowPolyFPS_Lite_Demo 1.unity.meta
 guid: edc7654c29d4a26439d04b28fd31d2a0
+========
+guid: bfbe545ee6c0f3840b10548125b56ac8
+>>>>>>>> Stashed changes:Assets/FPS_controller.unitypackage.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
