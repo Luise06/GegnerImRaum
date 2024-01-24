@@ -75,7 +75,7 @@ public class RayCastShootComplete : MonoBehaviour {
 				if (shotBox != null)
 				{
 					// Call the damage function of that script, passing in our gunDamage variable
-					shotBox.Damage(gunDamage);
+					//shotBox.Damage(gunDamage);
 				}
 
 				// Check if the object we hit has a rigidbody attached
