@@ -19,7 +19,15 @@ public class Shotable : MonoBehaviour
         spawnPoints1 = GameObject.Find("Spawn0");
         //enemySpawnScript = GameObject.Find("SpawnEnemies").GetComponent<SpawnEnemy>();
     }
-    public void Damage(int damageAmmount)
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "bullet")
+        {
+            Destruction();
+        }
+    }
+    /*public void Damage(int damageAmmount)
     {
         currentHealth -= damageAmmount;
 
@@ -28,15 +36,13 @@ public class Shotable : MonoBehaviour
 
             Destruction();
         }
-    }
+    }*/
 
     private void Destruction()
     {
         scoreManagment.currentScore += killScore;
         Destroy(gameObject, 0);
-        //Destroy(spawnPoints1);
-        //enemySpawnScript.SpawnPointDelete();
-        //spawnPoints1.SetActive(false);*/
+        
     }
 
 }
