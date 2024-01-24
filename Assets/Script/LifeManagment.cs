@@ -24,22 +24,23 @@ public class LifeManagment : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Damage(1);
+            Destroy(other.gameObject);
         }
     }
 
-    private IEnumerator ConstantDamage()
+    /*private IEnumerator ConstantDamage()
     {
         damaging = true;
         yield return new WaitForSeconds(0.5f);
         Damage(1);
         damaging = false;
-    }
+    }*/
   public void Damage(int damageAmmount)
     {
         if (alive)
         {
             currentHealth -= damageAmmount;
-            bloodAnimator.SetTrigger("damage");
+            //bloodAnimator.SetTrigger("damage");
             if (currentHealth <= 0)
             {
                 Die();
@@ -48,19 +49,19 @@ public class LifeManagment : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Enemy" && !damaging)
         {
             StartCoroutine(ConstantDamage());
         }
-    }
+    }*/
 
 
     private void Die()
     {
         alive = false;
-        Vector3 camPosition = fpsCamera.transform.position;
+        /*Vector3 camPosition = fpsCamera.transform.position;
         fpsCamera.SetActive(false);
         dethCamCenter.SetActive(true);
         dethCamCenter.transform.position = camPosition;
@@ -69,6 +70,6 @@ public class LifeManagment : MonoBehaviour
         buttonsPanel.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        scoreManagment.WriteHighScore();
+        scoreManagment.WriteHighScore();*/
     }
 }

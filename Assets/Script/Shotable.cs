@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shotable : MonoBehaviour
 {
-    public int currentHealth = 3;
+    public int currentHealth = 1;
     public int killScore = 1;
     public SpawnEnemy enemySpawnScript;
 
@@ -14,10 +14,10 @@ public class Shotable : MonoBehaviour
 
     private void Start()
     {
-        //scoreManagment = GameObject.Find("ScoreManager").GetComponent<ScoreManagment>();
+        scoreManagment = GameObject.Find("ScoreManager").GetComponent<ScoreManagment>();
         //shootableBoxScript = GameObject.Find("ShootCube").GetComponent<ShootableBox>();
         spawnPoints1 = GameObject.Find("Spawn0");
-        enemySpawnScript = GameObject.Find("SpawnEnemies").GetComponent<SpawnEnemy>();
+        //enemySpawnScript = GameObject.Find("SpawnEnemies").GetComponent<SpawnEnemy>();
     }
     public void Damage(int damageAmmount)
     {
@@ -25,6 +25,7 @@ public class Shotable : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+
             Destruction();
         }
     }
@@ -33,8 +34,8 @@ public class Shotable : MonoBehaviour
     {
         scoreManagment.currentScore += killScore;
         Destroy(gameObject, 0);
-        Destroy(spawnPoints1);
-        enemySpawnScript.SpawnPointDelete();
+        //Destroy(spawnPoints1);
+        //enemySpawnScript.SpawnPointDelete();
         //spawnPoints1.SetActive(false);*/
     }
 
