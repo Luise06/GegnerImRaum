@@ -24,6 +24,7 @@ public class Shotable : MonoBehaviour
     {
         if (collision.gameObject.tag == "bullet")
         {
+            scoreManagment.currentScore++;
             Destruction();
         }
     }

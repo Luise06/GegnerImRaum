@@ -28,13 +28,7 @@ public class LifeManagment : MonoBehaviour
         }
     }
 
-    /*private IEnumerator ConstantDamage()
-    {
-        damaging = true;
-        yield return new WaitForSeconds(0.5f);
-        Damage(1);
-        damaging = false;
-    }*/
+    
   public void Damage(int damageAmmount)
     {
         if (alive)
@@ -48,14 +42,6 @@ public class LifeManagment : MonoBehaviour
         }
         
     }
-
-    /*private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy" && !damaging)
-        {
-            StartCoroutine(ConstantDamage());
-        }
-    }*/
 
 
     private void Die()

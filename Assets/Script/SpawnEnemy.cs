@@ -24,7 +24,7 @@ public class SpawnEnemy : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (!waitActive)
@@ -74,13 +74,13 @@ public class SpawnEnemy : MonoBehaviour
     {
         waitActive = true;
         yield return new WaitForSeconds(spawnTime);
-        Spawn();
+        Spawn();                                        //löst spawnen aus
         waitActive = false;
     }
 
-    public void SpawnPointDelete()
+    /*public void SpawnPointDelete()
     {
         startIndex = 1;
         spawnPoints.RemoveAt(0);
-    }
+    }*/
 }

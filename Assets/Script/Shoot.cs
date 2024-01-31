@@ -33,7 +33,7 @@ public class Shoot : MonoBehaviour
         scoreManagment.currentScore += killScore;
         Destroy(gameObject, 0);
         Destroy(spawnPoints1);
-        enemySpawnScript.SpawnPointDelete();
+        //enemySpawnScript.SpawnPointDelete();
         spawnPoints1.SetActive(false);
     }
 
