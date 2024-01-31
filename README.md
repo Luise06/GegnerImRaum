@@ -31,7 +31,7 @@ Es basiert alles auf Vorlagen von Hederers 2. Klassen Projekt.
 ## Noch nicht Programmiert:
 + Der Score wird gezählt aber noch nicht angezeigt
 + Man brauch ein Interface in dem man den Score und Highscore sieht und retryen kann
-+ Der Player darf die geister nicht sehen, erst in der letzen Sekunde
++ Der Player darf die Geister nicht sehen, erst in der letzen Sekunde
 + Es kann sein dass das Spiel wegen der Spawntime oder dem Enemy speed zu leicht/schwer ist (werte müssen geändert werden)
 + Es gibt schon ein paar Sounds und Musik, die aber noch nicht in Unity integriert sind
 
